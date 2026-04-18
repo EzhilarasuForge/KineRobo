@@ -8,14 +8,12 @@ import {
   Eye,
   Globe,
   Layers,
-  MessageSquare,
-  Settings,
-  ShieldCheck,
-  Users
+  ShieldCheck
 } from 'lucide-react';
 import './index.css';
 import robotImage1 from '../robot_image_1.png';
 import robotImage2 from '../robot_image_2.png';
+import forgeLogo from '../Forge_logo.png';
 
 const productSections = [
   {
@@ -68,7 +66,6 @@ const Navbar = () => (
     </div>
 
     <div className="nav-actions">
-      <button className="btn btn-outline">Login</button>
       <a className="btn btn-primary" href="#demo-request">
         Book a Demo
       </a>
@@ -155,9 +152,6 @@ const ProductDetail = ({ product }) => (
         ))}
       </ul>
       <div className="detail-actions">
-        <a className="btn btn-primary" href="#demo-request">
-          Book a Demo
-        </a>
         <a className="btn btn-outline" href="#contact-partnership">
           Partner With Us
         </a>
@@ -322,9 +316,6 @@ const App = () => {
           subtitle="Collaborate with us to deploy scalable industrial autonomy across your facilities."
         />
         <div className="cta-actions">
-          <a className="btn btn-primary" href="mailto:quinexusrobotics@gmail.com?subject=Demo%20Request">
-            Book a Demo
-          </a>
           <a className="btn btn-outline" href="mailto:quinexusrobotics@gmail.com?subject=Partnership%20Inquiry">
             Partner With Us
           </a>
@@ -344,25 +335,6 @@ const App = () => {
               Creating the global standard for autonomous industrial robotics. Building the future of intelligent
               automation today.
             </p>
-            <div className="footer-icons">
-              <Globe size={24} />
-              <Users size={24} />
-              <MessageSquare size={24} />
-            </div>
-          </div>
-          <div>
-            <h4>Quick Links</h4>
-            <ul>
-              <li>
-                <a href="#products">Solutions</a>
-              </li>
-              <li>
-                <a href="#technology">Technology</a>
-              </li>
-              <li>
-                <a href="#contact-partnership">Contact</a>
-              </li>
-            </ul>
           </div>
           <div>
             <h4>Contact Details</h4>
@@ -376,6 +348,10 @@ const App = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="forge-accelerator">
+          <img src={forgeLogo} alt="Forge logo" className="forge-logo" />
+          <p>Accelerated by Forge</p>
         </div>
         <div className="footer-bottom">© 2026 KINEROBO Robotics Pvt Ltd. Engineering the Future.</div>
       </footer>
